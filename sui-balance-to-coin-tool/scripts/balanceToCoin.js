@@ -46,7 +46,7 @@ const NETWORK = process.env.SUI_NETWORK || 'mainnet';
 // SuiGrpcClient needs an explicit baseUrl — the gRPC service runs on the
 // same fullnode hosts as the old JSON-RPC API, just accessed differently.
 const GRPC_BASE_URLS = {
-  mainnet: 'https://sui-rpc.publicnode.com',
+  mainnet: 'https://sui-rpc.publicnode.com:443',
   testnet: 'https://fullnode.testnet.sui.io:443',
   devnet: 'https://fullnode.devnet.sui.io:443',
   localnet: 'http://127.0.0.1:9000',
